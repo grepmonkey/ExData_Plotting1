@@ -4,7 +4,11 @@ source("common.R")
 png("plot2.png", height = 480, width = 480)
 
 # See common.R file for the implementation.
-plotGlobalActivePower(loadDataset("../household_power_consumption.txt"))
+plotGlobalActivePower(
+  loadDataset("../household_power_consumption.txt"),
+  xlab = "",
+  ylab = "Global Active Power (kilowatts)"
+)
 
 # Close the png graphics device.
 dev.off()

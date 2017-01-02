@@ -9,10 +9,10 @@ png("plot4.png", height = 480, width = 480)
 par(mfrow = c(2, 2))
 
 # See common.R file for the implementation.
-plotGlobalActivePower(dataset)
-plotVoltage(dataset)
-plotEnergySubmetering(dataset)
-plotGlobalReactivePower(dataset)
+plotGlobalActivePower(dataset, xlab = "", ylab = "Global Active Power")
+plotVoltage(dataset, xlab = "datetime", ylab = "Voltage")
+plotEnergySubmetering(dataset, xlab = "", ylab = "Energy sub metering")
+plotGlobalReactivePower(dataset, xlab = "datetime", ylab = "Global_reactive_power")
 
 # Close the png graphics device.
 dev.off()
