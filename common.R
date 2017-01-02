@@ -112,6 +112,6 @@ plotGlobalReactivePower <-
       ylab = "Global_reactive_power"
     )
     
-    # Connect the Voltage points.
+    # Connect the Global_reactive_power points.
     lines(dataset$DateTime, dataset$Global_reactive_power)
   }
