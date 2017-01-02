@@ -1,5 +1,6 @@
 source("common.R")
 
+# See common.R file for the implementation.
 dataset <- loadDataset("../household_power_consumption.txt")
 
 # Open the png graphics device.
